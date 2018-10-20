@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewort" content="width=device-width , initial-scale=1">
+
+        <title> Scope X </title>
+   <!-- <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+        <style> 
+            
+            body{
+                
+                background-image: url(photos/woo.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+          .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+   
+        </style>
+    </head>
+
+    <body>
+        <!-- navigation bar-->
+        <nav class=" navbar navbar-expand-md navbar-dark bg-dark sticky-top "   >
+            <div class="container-fluid" >
+                <a href="index.html" class="navbar-brand"><img src="photos/logo.png" width="80em" height="60em" style="opacity:1;z-index: 1" ></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" style="opacity:1;z-index: 1"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive" style="opacity:1;z-index: 1">
+                    <ul class="navbar-nav mr-auto">
+                        <!__ Note:change the active page__>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                        
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="planets.html">planets</a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a class="nav-link" href="underdevelopment.html">About</a>
+                    </li>
+                        
+                    <li class="nav-item ">
+                        <a class="nav-link" href="underdevelopment.html">connect</a>
+                    </li>
+                        
+                         <li class="nav-item ">
+                        <a class="nav-link" href="https://spaceplace.nasa.gov/">Game</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+                </nav>
+                        
+        <!--body-->
+        <div class="card-deck d-flex justify-content-between" style="padding: 50px;">
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a href="earth-discover.html">
+    <div class="hovereffect">
+        <img class="img-responsive" src="photos/9_learning.png" alt="" >
+            <div class="overlay">
+                <h1 style="color: white;outline-color: black;">Dicover</h1>
+               
+            </div>
+    </div>
+                        
+            </a>       
+
+</div>
+        
+               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a href="https://www.youtube.com/watch?v=B-nEYsyRlYo">
+    <div class="hovereffect">
+        <img class="img-responsive" src="photos/save%20the%20planet.png" alt="" >
+            <div class="overlay">
+                <h1 style="color: white;outline-color: black;">Save The Planet</h1>
+               
+            </div>
+    </div>
+                        
+            </a>       
+
+</div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a href="https://science.nasa.gov/citizenscientists">
+    <div class="hovereffect">
+        <img class="img-responsive" src="photos/environmemt.png" alt="">
+            <div class="overlay">
+                <h1 style="color: white;outline-color: black;">Act</h1>
+				<p>
+				</p>
+            </div>
+    </div>
+            </a>
+            
+        </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a href="https://spaceplace.nasa.gov/menu/earth/">
+    <div class="hovereffect">
+        <img class="img-responsive" src="photos/game.png" alt="" >
+            <div class="overlay">
+                <h1 style="color: white;outline-color: black;">Game</h1>
+               
+            </div>
+    </div>
+                        
+            </a>       
+
+</div>
+        </div>
+        <!--footer-->
+        <footer class="bg-dark" style="text-align: center" >
+        <div class="container-fluid padding" >
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p style="color: aliceblue;">CopyRights © ScopeX</p>
+                </div>
+                
+            </div>
+            
+            </div>
+        </footer>
+    </body>
+</html>

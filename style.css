@@ -1,0 +1,8 @@
+[class*="col-"]{
+    padding: 1rem;
+    
+}
+.carousel-item{
+    
+    background-size: cover;
+}
